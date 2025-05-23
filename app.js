@@ -9,10 +9,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Conexão com MySQL
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'nozomi.proxy.rlwy.net',
     user: 'root',
-    password: '',
-    database: 'crud_db'
+    password: 'zHrrYGMmdOTNZKnxDnHqADvmctONROkF', 
+    database: 'railway',
+    port: 46594
 });
 
 connection.connect(err => {
